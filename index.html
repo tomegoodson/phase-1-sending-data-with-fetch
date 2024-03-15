@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JavaScript Lab</title>
-  </head>
-
-  <body>
+    <style>
+        .login-form {
+            position: absolute;
+            top: 0;
+            left: 0; /* Move to the left side */
+            margin: 10px;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"> <!-- Change to email -->
+            <button type="submit">Login</button>
+        </form>
+    </div>
     <script src="index.js"></script>
-  </body>
-
+</body>
 </html>
